@@ -27,7 +27,7 @@ namespace Microsoft.Azure.WebJobs
     [DebuggerDisplay("{DebuggerDisplay,nq}")]
     [ConnectionProvider(typeof(ServiceBusAccountAttribute))]
     [Binding]
-    public sealed class ServiceBusTriggerAttribute : Attribute, IConnectionProvider
+    public class ServiceBusTriggerAttribute : Attribute, IConnectionProvider
     {
         private readonly string _queueName;
         private readonly string _topicName;

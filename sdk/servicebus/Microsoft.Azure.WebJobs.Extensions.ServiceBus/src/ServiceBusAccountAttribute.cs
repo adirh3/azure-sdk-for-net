@@ -13,7 +13,7 @@ namespace Microsoft.Azure.WebJobs
     /// is in that order.
     /// </remarks>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method | AttributeTargets.Parameter)]
-    public sealed class ServiceBusAccountAttribute : Attribute, IConnectionProvider
+    public class ServiceBusAccountAttribute : Attribute, IConnectionProvider
     {
         /// <summary>
         /// Constructs a new instance.

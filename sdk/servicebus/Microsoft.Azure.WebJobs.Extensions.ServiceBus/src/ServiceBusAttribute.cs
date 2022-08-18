@@ -28,7 +28,7 @@ namespace Microsoft.Azure.WebJobs
     [DebuggerDisplay("{QueueOrTopicName,nq}")]
     [ConnectionProvider(typeof(ServiceBusAccountAttribute))]
     [Binding]
-    public sealed class ServiceBusAttribute : Attribute, IConnectionProvider
+    public class ServiceBusAttribute : Attribute, IConnectionProvider
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ServiceBusAttribute"/> class.
